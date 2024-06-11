@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectPage = () => {
+const ProjectsPage = () => {
     // Your showcase data
     const showcaseData = [
         { title: 'Project 1', description: 'This is project 1' },
@@ -21,5 +21,7 @@ const ProjectPage = () => {
         </div>
     );
 };
+
+import ProjectPage from './ProjectsPage'; // Update the import statement to match the correct file path
 
 export default ProjectPage;
