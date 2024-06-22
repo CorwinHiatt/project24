@@ -1,23 +1,24 @@
 import React from 'react';
+import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
-    return (
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div className="header-content">
-                <h1>Welcome to My Website</h1>
-                <p>Discover the amazing features</p>
-                <button>Get Started</button>
-            </div>
-        </header>
-    );
+  return (
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="navbar">
+      <Navbar.Brand as={Link} to="/">My Website</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link as={Link} to="/">Home</Nav.Link>
+          <Nav.Link as={Link} to="/about">About</Nav.Link>
+          <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+          <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+        </Nav>
+        <Button variant="outline-light" className="ml-2">Get Started</Button>
+      </Navbar.Collapse>
+    </Navbar>
+  );
 };
 
 export default Header;
