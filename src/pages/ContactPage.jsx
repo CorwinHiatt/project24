@@ -26,6 +26,7 @@ const ContactPage = () => {
                 <Form.Group controlId="formName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control
+                        className="input-field"
                         type="text"
                         name="name"
                         value={formData.name}
@@ -36,6 +37,7 @@ const ContactPage = () => {
                 <Form.Group controlId="formEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control
+                        className="input-field"
                         type="email"
                         name="email"
                         value={formData.email}
@@ -46,6 +48,7 @@ const ContactPage = () => {
                 <Form.Group controlId="formMessage">
                     <Form.Label>Message</Form.Label>
                     <Form.Control
+                        className="input-field"
                         as="textarea"
                         name="message"
                         value={formData.message}
