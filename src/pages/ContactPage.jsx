@@ -8,5 +8,5 @@ const ContactPage = () => {
         </div>
     );
 };
-
+// CHECKING TO SEE WHY NOT COMMITTING TO GITHUB
 export default ContactPage;
