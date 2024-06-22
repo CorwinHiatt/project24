@@ -1,39 +1,106 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Navigation styles */
+.nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav li {
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Page styles */
+.page {
+  padding: 20px;
+}
+
+/* Home page styles */
+.home {
+  background-color: #f2f2f2;
+}
+
+.home h2 {
+  margin-top: 0;
+}
+
+/* About page styles */
+.about {
+  background-color: #e6e6e6;
+}
+
+.about p {
+  margin-top: 0;
+}
+
+/* Projects page styles */
+.projects {
+  background-color: #d9d9d9;
+}
+
+.projects ul {
+  padding: 0;
+}
+
+.projects li {
+  margin-bottom: 10px;
+}
+
+/* Contact page styles */
+.contact {
+  background-color: #cccccc;
+}
+
+.contact form {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.contact label {
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact input,
+.contact textarea {
+  margin-bottom: 10px;
+}
+
+.contact button {
+  padding: 10px;
+}
+
+/* Theme styles */
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
 }
