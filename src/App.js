@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage';
 import ProjectsPage from './pages/ProjectsPage'; // Uncommented to include ProjectsPage
 import ContactPage from './pages/ContactPage'; // Uncommented to include ContactPage
 import Header from './components/Header';
+import { useState } from 'react';
 
 function App() {
   return (
@@ -18,25 +19,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
-
-
-
-import React, { useState } from 'react';
-
-function App() {
-    const [theme, setTheme] = useState('light'); // Default theme is light
-
-    const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-    };
-
-    return (
-        <div className={theme + '-theme'}>
-            {/* Rest of your app components */}
-            <button onClick={toggleTheme}>Toggle Theme</button>
-        </div>
-    );
 }
 
 export default App;
